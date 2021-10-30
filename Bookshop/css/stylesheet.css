@@ -1,0 +1,536 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+
+/* top header for all pages */
+
+.topHeader img {
+    float: left;
+    position: absolute;
+    max-width: 180px;
+    height: 130px;
+    top: 0px;
+    border-radius: 0.5rem;
+}
+
+.topHeader h1 {
+    position: relative;
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 2rem;
+    text-align: center;
+}
+
+.topHeader {
+    background-color: #82b7c5;
+    height: 120px;
+    padding-top: 10px;
+  
+}
+
+nav {
+    display: block;
+    padding-top: 10px;
+    background-color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 0.5em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+a:link,
+a:visited {
+    background-color: black;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 21px -12px rgba(0, 0, 0, 0.79);
+    
+}
+
+a:hover,
+a:focus {
+    background-color: silver;
+}
+
+nav li {
+    display: inline;
+    /* background-color: red; */
+    margin-right: 70px;
+}
+
+
+/* maninly for the home page (index.html) */
+
+.container {
+    position: relative;
+    margin-left: 10%;
+    margin-right: 5%;
+    top: 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100%;
+    height: 100%;
+}
+
+.item {
+    max-width: 32%;
+    margin: 2%;
+    background-color: aliceblue;
+    border-radius: 1rem;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+}
+
+.items-Header {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    background-color: #555;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.item-content {
+    display: inline-grid;
+    grid-template-columns: 25% auto;
+    /* background-color: rgb(194, 225, 243); */
+}
+.item-content .button{
+    padding: 5px 20px 15px
+    
+}
+
+.book-description {
+    position: relative;
+    color: black;
+}
+
+.book-description p {
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+}
+
+.buyButton {
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    
+}
+
+.buyButton .button {
+    width: 20px;
+    height: 10px;
+    
+}
+
+.item-content img {
+    width: 120px;
+    border-radius: 1rem;
+}
+
+
+/* php pay.php file elements */
+
+.paymentContainer {
+    display: block;
+    /* border: solid black; */
+    margin-left: 15%;
+    width: 90%;
+    height: 70%;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 20% 20% 60%;
+    grid-gap: 5px;
+    margin-left: 5%;
+    width: 50%;
+    height: 15%;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    padding: 10px 0px 10px 5px;
+}
+
+.card img {
+    width: 100px;
+    height: 50px;
+}
+
+
+/* payment form */
+
+.paymentForm {
+    position: relative;
+    display: inline-block;
+    margin-left: 5%;
+    width: 70%;
+    height: 50%;
+    background-color: rgb(225, 225, 225);
+    box-sizing: border-box;
+    padding: 1% 0 10% 1%;
+}
+
+.paymentForm p {
+    margin-left: 120px;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+
+/* text inputs */
+
+input[type=text] {
+    box-sizing: border-box;
+    width: 20%;
+    padding: 5px;
+    margin: 10px;
+    margin-left: 22px;
+}
+
+select {
+    box-sizing: border-box;
+    margin: 10px;
+    margin-left: 10px;
+}
+
+.paymentForm button {
+    display: inline-block;
+    border: 0.15em solid rgba(170, 4, 4, 0.753);
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    margin: 10px;
+    margin-top: 0px;
+    width: 100px;
+    margin-left: 120px;
+    color: white;
+    background-color: rgba(170, 4, 4, 0.753);
+}
+
+.paymentForm button:hover {
+    background-color: rgba(102, 5, 5, 0.842);
+}
+
+
+/* success page elements*/
+
+.card p {
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 0px;
+}
+
+.card #cardNum {
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 18px;
+}
+
+
+/*media query for small phones that are 320 to 375 width*/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 375px) {
+    nav li {
+        margin-right: 0px;
+    }
+    .item {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+    .item-content {
+        grid-template-columns: 40% 60%;
+    }
+    .item-content img {
+        width: 100px;
+    }
+    .book-description p {
+        font-size: 11px;
+    }
+    a:link,
+    a:visited {
+        padding: 5px 20px 10px 20px;
+        
+    }
+    .topHeader img {
+        max-width: 100px;
+        max-height: 92px;
+    }
+    .topHeader h1 {
+        font-size: 30px;
+        text-align: right;
+        right: 10px;
+    }
+    .topHeader {
+        height: 82px;
+    }
+    nav {
+        text-align: center;
+    }
+    nav a {
+        font-size: 13px;
+    }
+    .container {
+        flex-flow: column wrap;
+    }
+    /*  mainly pay.php elements */
+    .paymentContainer {
+        margin-left: 2%;
+    }
+    .paymentForm {
+        width: 100%;
+        padding: 1% 0 10% 1%
+    }
+    .paymentForm label {
+        font-size: 15px;
+    }
+    input[type=text] {
+        width: 50%;
+    }
+    .card {
+        width: 100%;
+        margin-left: 3%;
+        grid-template-columns: 30% 30% 40%;
+    }
+    .card img {
+        width: 85px;
+    }
+    select {
+        margin-left: 5px;
+    }
+    /* success.php elements */
+    .card #cardNum {
+        padding-top: 0px;
+        font-size: 15px;
+    }
+}
+
+
+/* media query for medium/large size phones and tablet that are between 375px and 767px */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 767px) {
+    nav li {
+        margin-right: 0px;
+    }
+    .item {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+    .item-content {
+        grid-template-columns: 40% 60%;
+    }
+    a:link,
+    a:visited {
+        padding: 5px 20px 10px 20px;
+    }
+    .topHeader img {
+        max-width: 120px;
+        max-height: 92px;
+    }
+    .topHeader h1 {
+        font-size: 30px;
+        text-align: center;
+        margin-left: 80px;
+    }
+    .topHeader {
+        height: 82px;
+    }
+    nav {
+        text-align: center;
+    }
+    .container {
+        flex-flow: column wrap;
+    }
+    /*  mainly pay.php elements */
+    .paymentContainer {
+        margin-left: 2%;
+    }
+    .paymentForm {
+        width: 100%;
+        padding: 1% 0 10% 1%
+    }
+    input[type=text] {
+        width: 50%;
+    }
+    .card {
+        width: 100%;
+        margin-left: 3%;
+        grid-template-columns: 25% 27% 48%;
+    }
+    /* success.php elements */
+    .card #cardNum {
+        padding-top: 0px;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    nav li {
+        margin-right: 0px;
+    }
+    .item {
+        max-width: 40%;
+    }
+    .item-content {
+        grid-template-columns: 40% 60%;
+    }
+    .item-content img {
+        width: 100px;
+    }
+    .book-description p {
+        font-size: 11px;
+    }
+    a:link,
+    a:visited {
+        padding: 5px 20px 10px 20px;
+    }
+    .topHeader img {
+        max-width: 120px;
+        max-height: 92px;
+    }
+    .topHeader h1 {
+        font-size: 30px;
+        text-align: center;
+        right: 10px;
+    }
+    .topHeader {
+        height: 82px;
+    }
+    nav {
+        text-align: center;
+    }
+    nav a {
+        font-size: 15px;
+    }
+    .container {
+        flex-flow: row wrap;
+    }
+    /*  mainly pay.php elements */
+    .paymentContainer {
+        margin-left: 2%;
+    }
+    .paymentForm {
+        width: 100%;
+        padding: 1% 0 10% 1%
+    }
+    .paymentForm label {
+        font-size: 15px;
+    }
+    input[type=text] {
+        width: 50%;
+    }
+    .card {
+        width: 100%;
+        margin-left: 5%;
+        grid-template-columns: 30% 20% 40%;
+    }
+    .card img {
+        width: 100px;
+    }
+    select {
+        margin-left: 5px;
+    }
+    /* success.php elements */
+    .card #cardNum {
+        padding-top: 0px;
+        font-size: 15px;
+    }
+}
+
+
+/* media query for 1024 to 1540*/
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1530px) {
+    nav li {
+        margin-right: 0px;
+    }
+    .item {
+        max-width: 40%;
+    }
+    .item-content {
+        grid-template-columns: 40% 60%;
+    }
+    .item-content img {
+        width: 100px;
+    }
+    .book-description p {
+        font-size: 11px;
+    }
+    a:link,
+    a:visited {
+        padding: 5px 20px 10px 20px;
+    }
+    .topHeader img {
+        max-width: 120px;
+        max-height: 92px;
+    }
+    .topHeader h1 {
+        font-size: 30px;
+        text-align: center;
+        right: 10px;
+    }
+    .topHeader {
+        height: 82px;
+    }
+    nav {
+        text-align: center;
+    }
+    nav a {
+        font-size: 15px;
+    }
+    .container {
+        flex-flow: row wrap;
+    }
+    /*  mainly pay.php elements */
+    .paymentContainer {
+        margin-left: 2%;
+    }
+    .paymentForm {
+        width: 100%;
+        padding: 1% 0 10% 1%
+    }
+    .paymentForm label {
+        font-size: 15px;
+    }
+    input[type=text] {
+        width: 50%;
+    }
+    .card {
+        width: 100%;
+        margin-left: 5%;
+        grid-template-columns: 20% 15% 60%;
+    }
+    .card img {
+        width: 100px;
+    }
+    select {
+        margin-left: 5px;
+    }
+    /* success.php elements */
+    .card #cardNum {
+        padding-top: 0px;
+        font-size: 15px;
+    }
+}
+
+
+/* For 4K devices */
+
+@media only screen and (min-device-width: 1530px) and (max-device-width: 2560px) {
+    .item-content {
+        grid-template-columns: 30% auto;
+    }
+    .book-description p {
+        font-size: 15px;
+    }
+}
